@@ -11,8 +11,8 @@
  * @return {number[]}
  */
 var twoSum = function(nums, target) {
-  let obj = {};
-  for (let i = 0, len = nums.length; i < len; i++) {
+  let obj = {}; // 当然也可以用Map
+  for (let i = 0; i < nums.length; i++) {
     let num = nums[i];
     if (num in obj) {
       return [obj[num], i];
